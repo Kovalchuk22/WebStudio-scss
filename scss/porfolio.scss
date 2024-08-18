@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500");
+
+:root {
+  --background-colors: #2f303a;
+  --text-color: #ffffff;
+  --background-color: #f5f4fa;
+  --button-color: #2196f3;
+}
+
+button {
+  background: var(--button-color);
+  color: var(--text-color);
+  width: 300px;
+  height: 40px;
+}
+
+footer {
+  background-color: var(--background-colors);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  min-width: 800px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+figcaption {
+  padding-left: 20px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.595);
+}
+
+
+.section-last100klient-box-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+
+@import 'components/porfolio/header' ;
+@import 'components/porfolio/section-1' ;
+@import 'components/porfolio/section-2' ;
+@import 'components/porfolio/footer' ;
+
+/*# sourceMappingURL=porfolio.css.map */
