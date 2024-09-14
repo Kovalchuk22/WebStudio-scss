@@ -63,7 +63,7 @@ main {
 
 .button-top:hover,
 .button-dfdfdfd:hover {
-    background-color: #2196F3;
+    background-color: $button-color;
     color: #eee;
     font-weight: 500;
     box-shadow: 1px 2px 5px gray;

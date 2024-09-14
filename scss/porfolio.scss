@@ -1,22 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500");
+@import 'utils/variables';
+@import 'components/porfolio/header' ;
+@import 'components/porfolio/section-1' ;
+@import 'components/porfolio/section-2' ;
+@import 'components/porfolio/footer' ;
 
-:root {
-  --background-colors: #2f303a;
-  --text-color: #ffffff;
-  --background-color: #f5f4fa;
-  --button-color: #2196f3;
-}
+/*# sourceMappingURL=porfolio.css.map */
+
+
 
 button {
-  background: var(--button-color);
-  color: var(--text-color);
+  background: $button-color;
+  color: $text-color;
   width: 300px;
   height: 40px;
 }
 
 footer {
-  background-color: var(--background-colors);
-  color: var(--text-color);
+  background-color: $background-colors;
+  color: $text-color;
 }
 
 ul {
@@ -54,11 +56,3 @@ p {
   justify-content: space-between;
   padding-bottom: 94px;
 }
-
-
-@import 'components/porfolio/header' ;
-@import 'components/porfolio/section-1' ;
-@import 'components/porfolio/section-2' ;
-@import 'components/porfolio/footer' ;
-
-/*# sourceMappingURL=porfolio.css.map */

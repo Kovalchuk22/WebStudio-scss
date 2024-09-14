@@ -1,5 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500");
+@import 'utils/variables';
+@import 'components/studio/header' ;
+@import 'components/studio/section-1-modal' ;
+@import 'components/studio/sectuon-2' ;
+@import 'components/studio/section-3' ;
+@import 'components/studio/sectiom-4' ;
+@import 'components/studio/section-5' ;
+@import 'components/studio/footer' ; 
+
+/*# sourceMappingURL=styles.css.map */
+
 .container {
   width: 1200px;
   margin: auto;
@@ -14,16 +25,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-:root {
-  --background-colors: #2f303a;
-  --text-color: #ffffff;
-  --background-color: #f5f4fa;
-  --button-color: #2196f3;
-}
-
 button {
-  background: var(--button-color);
-  color: var(--text-color);
+  background: $button-color;
+  color: $text-color;
   width: 300px;
   height: 40px;
 }
@@ -128,12 +132,3 @@ figcaption {
 .in0:hover .in3 {
   fill: #ffffff;
 }
-
-@import 'components/studio/header' ;
-@import 'components/studio/section-1-modal' ;
-@import 'components/studio/sectuon-2' ;
-@import 'components/studio/section-3' ;
-@import 'components/studio/sectiom-4' ;
-@import 'components/studio/section-5' ;
-@import 'components/studio/footer' ; 
-/*# sourceMappingURL=styles.css.map */
