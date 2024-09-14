@@ -2,112 +2,26 @@
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
 /*# Open Hheeaaddeerr                                                                                  Open   Header                                                                                                Open Hheeaaddeerr */
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.nav-header {
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
 }
-
-.heder-flex {
+.header__menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.heder-img {
-  padding-right: 63px;
-}
-
-.header-top {
-  padding: 15px 0;
-}
-
-.item-head {
-  padding-right: 50px;
-}
-
-#header {
-  padding-left: 295px;
-}
-
-.item-header {
-  padding-right: 50px;
-}
-
-.heder-img {
-  padding-right: 63px;
-}
-
-.header-flex {
   list-style: none;
-  font-size: 14px;
-  font-weight: 500;
 }
-
-.top-itm {
-  color: #000000;
-  font-weight: 500;
-}
-
-.header-top {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.maiss {
-  color: rgba(117, 117, 117, 0.8117647059);
-  font-weight: 500;
-}
-
-.tell {
-  color: #757575;
-  font-weight: 500;
-}
-
-.top-itm,
-.maiss,
-.tell {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 500;
-}
-
-.top-itm:hover,
-.maiss:hover,
-.tell:hover {
-  color: #2196F3;
-  font-weight: 500;
-}
-
-.fone-1header2 {
-  fill: #757575;
-}
-
-.maiss {
-  fill: #757575;
-  text-decoration: none;
-}
-
-.item-header .fone-1header2 {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-header:hover .fone-1header2 {
-  fill: #2196f3;
-}
-
-.item-header .maiss {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-header:hover .maiss {
-  color: #2196f3;
-}
-
-.menu a {
+.header__menu a {
   position: relative;
 }
-
-.menu a::before {
+.header__menu a::before {
   content: "";
   width: 100%;
   height: 5px;
@@ -118,58 +32,63 @@
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale3d(0, 1, 1);
 }
-
-.menu a:hover::before {
+.header__menu a:hover::before {
   transform: scale3d(1, 1, 1);
 }
-
-.item-header {
+.header__menu a.active {
+  color: #2196f3;
+}
+.header__menu a.active::before {
+  transform: scale3d(1, 1, 1);
+}
+.header__logo {
+  padding-right: 63px;
+}
+.header__item {
   display: flex;
   align-items: center;
 }
-
-.email-item-hedera {
+.header__item--mail {
   display: flex;
   align-items: center;
 }
-
-.tell {
-  margin-left: 2px;
-}
-
-.fone-1header1 {
-  margin-right: 2px;
-}
-
-.tell {
+.header__item--mail-2 {
   fill: #757575;
-  text-decoration: none;
-}
-
-.email-item-hedera .email-1header1,
-.email-item-hedera .email-1header2 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.email-item-hedera:hover .email-1header1,
-.email-item-hedera:hover .email-1header2 {
+.header__item--mail-2:hover {
   fill: #2196f3;
 }
-
-.email-item-hedera .tell {
+.header__item--tel {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.email-item-hedera:hover .tell {
+.header__item--tel:hover {
   color: #2196f3;
 }
-
-.menu a.active {
-  color: #2196f3;
+.header__item:not(:nth-child(3)):not(:nth-child(5)) {
+  padding-right: 50px;
+}
+.header__link {
+  color: #000000;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__link:hover {
+  color: #2196F3;
+}
+.header__link--mail {
+  color: rgba(117, 117, 117, 0.8117647059);
+}
+.header__link--tell {
+  color: #757575;
+  margin-left: 2px;
+}
+.header__link--mail2 {
+  fill: #757575;
 }
 
-.menu a.active::before {
-  transform: scale3d(1, 1, 1);
+#header {
+  padding-left: 295px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -208,7 +127,7 @@ button {
 
 .hhh1 {
   text-align: center;
-  color: var(--text-color);
+  color: #ffffff;
   font-family: Roboto;
 }
 
@@ -498,51 +417,40 @@ button {
   justify-content: space-between;
 }
 
-#special-item1::before {
+.special-item::before {
   content: url(../img/group1.jpg);
   width: 270px;
   height: 120px;
 }
-
-#special-item2::before {
+.special-item:nth-of-type(1)::before {
+  content: url(../img/group1.jpg);
+}
+.special-item:nth-of-type(2)::before {
   content: url(../img/group4.jpg);
-  width: 270px;
-  height: 120px;
 }
-
-#special-item3::before {
+.special-item:nth-of-type(3)::before {
   content: url(../img/group3.jpg);
-  width: 270px;
-  height: 120px;
 }
-
-#special-item4::before {
+.special-item:nth-of-type(4)::before {
   content: url(../img/group2.jpg);
-  width: 270px;
-  height: 120px;
 }
-
 .special-item p {
   font-size: 14px;
   font-weight: 400;
   line-height: 170%;
 }
-
 .special-item h3 {
   font-size: 14px;
   font-weight: 700;
 }
 
-.texst12 {
+.texst12,
+.text777 {
   color: rgba(117, 117, 117, 0.8117647059);
 }
 
 .texst1 {
   font-weight: 500;
-}
-
-.text777 {
-  color: rgba(117, 117, 117, 0.8117647059);
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -566,19 +474,9 @@ button {
 
 .item {
   position: relative;
+  height: 294px;
 }
-
-.teamss-text {
-  font-size: 35px;
-  padding-bottom: 20px;
-}
-
-.teamss-text {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.description {
+.item .description {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -590,8 +488,13 @@ button {
   text-align: center;
 }
 
-.item {
-  height: 294px;
+.teamss-text {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.teamss-text.small {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .it-s3-or4-i-forgot {
@@ -647,9 +550,9 @@ figure {
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .klient-section-text {
   padding-top: 94px;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 36px;
-  margin: 0px;
+  margin: 0;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -660,61 +563,243 @@ figure {
   padding-bottom: 94px;
 }
 
-/* */
 .kliant00 .kliant02,
 .kliant00 .kliant01,
+.kliant00 .kliant11,
+.kliant00 .kliant12,
+.kliant00 .kliant13,
+.kliant00 .kliant21,
+.kliant00 .kliant22,
+.kliant00 .kliant23,
+.kliant00 .kliant24,
+.kliant00 .kliant31,
+.kliant00 .kliant32,
+.kliant00 .kliant41,
+.kliant00 .kliant42,
+.kliant00 .kliant43,
+.kliant00 .kliant44,
+.kliant10 .kliant02,
+.kliant10 .kliant01,
 .kliant10 .kliant11,
 .kliant10 .kliant12,
-.kliant10 .kliant13 {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.kliant00:hover .kliant02 {
-  fill: #2196f3;
-}
-
-.kliant00:hover .kliant01 {
-  stroke: #2196f3;
-}
-
-.kliant10:hover .kliant11 {
-  fill: #2196f3;
-}
-
-.kliant10:hover .kliant12 {
-  fill: #2196f3;
-}
-
-.kliant10:hover .kliant13 {
-  stroke: #2196f3;
-}
-
+.kliant10 .kliant13,
+.kliant10 .kliant21,
+.kliant10 .kliant22,
+.kliant10 .kliant23,
+.kliant10 .kliant24,
+.kliant10 .kliant31,
+.kliant10 .kliant32,
+.kliant10 .kliant41,
+.kliant10 .kliant42,
+.kliant10 .kliant43,
+.kliant10 .kliant44,
+.kliant20 .kliant02,
+.kliant20 .kliant01,
+.kliant20 .kliant11,
+.kliant20 .kliant12,
+.kliant20 .kliant13,
 .kliant20 .kliant21,
 .kliant20 .kliant22,
 .kliant20 .kliant23,
 .kliant20 .kliant24,
+.kliant20 .kliant31,
+.kliant20 .kliant32,
+.kliant20 .kliant41,
+.kliant20 .kliant42,
+.kliant20 .kliant43,
+.kliant20 .kliant44,
+.kliant30 .kliant02,
+.kliant30 .kliant01,
+.kliant30 .kliant11,
+.kliant30 .kliant12,
+.kliant30 .kliant13,
+.kliant30 .kliant21,
+.kliant30 .kliant22,
+.kliant30 .kliant23,
+.kliant30 .kliant24,
 .kliant30 .kliant31,
 .kliant30 .kliant32,
+.kliant30 .kliant41,
+.kliant30 .kliant42,
+.kliant30 .kliant43,
+.kliant30 .kliant44,
+.kliant40 .kliant02,
+.kliant40 .kliant01,
+.kliant40 .kliant11,
+.kliant40 .kliant12,
+.kliant40 .kliant13,
+.kliant40 .kliant21,
+.kliant40 .kliant22,
+.kliant40 .kliant23,
+.kliant40 .kliant24,
+.kliant40 .kliant31,
+.kliant40 .kliant32,
 .kliant40 .kliant41,
 .kliant40 .kliant42,
 .kliant40 .kliant43,
 .kliant40 .kliant44 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.kliant20:hover .kliant21 {
+.kliant00:hover .kliant02,
+.kliant00:hover .kliant11,
+.kliant00:hover .kliant12,
+.kliant00:hover .kliant21,
+.kliant00:hover .kliant22,
+.kliant00:hover .kliant23,
+.kliant00:hover .kliant24,
+.kliant00:hover .kliant31,
+.kliant00:hover .kliant32,
+.kliant00:hover .kliant41,
+.kliant00:hover .kliant42,
+.kliant00:hover .kliant43,
+.kliant00:hover .kliant44,
+.kliant10:hover .kliant02,
+.kliant10:hover .kliant11,
+.kliant10:hover .kliant12,
+.kliant10:hover .kliant21,
+.kliant10:hover .kliant22,
+.kliant10:hover .kliant23,
+.kliant10:hover .kliant24,
+.kliant10:hover .kliant31,
+.kliant10:hover .kliant32,
+.kliant10:hover .kliant41,
+.kliant10:hover .kliant42,
+.kliant10:hover .kliant43,
+.kliant10:hover .kliant44,
+.kliant20:hover .kliant02,
+.kliant20:hover .kliant11,
+.kliant20:hover .kliant12,
+.kliant20:hover .kliant21,
+.kliant20:hover .kliant22,
+.kliant20:hover .kliant23,
+.kliant20:hover .kliant24,
+.kliant20:hover .kliant31,
+.kliant20:hover .kliant32,
+.kliant20:hover .kliant41,
+.kliant20:hover .kliant42,
+.kliant20:hover .kliant43,
+.kliant20:hover .kliant44,
+.kliant30:hover .kliant02,
+.kliant30:hover .kliant11,
+.kliant30:hover .kliant12,
+.kliant30:hover .kliant21,
+.kliant30:hover .kliant22,
+.kliant30:hover .kliant23,
+.kliant30:hover .kliant24,
+.kliant30:hover .kliant31,
+.kliant30:hover .kliant32,
+.kliant30:hover .kliant41,
+.kliant30:hover .kliant42,
+.kliant30:hover .kliant43,
+.kliant30:hover .kliant44,
+.kliant40:hover .kliant02,
+.kliant40:hover .kliant11,
+.kliant40:hover .kliant12,
+.kliant40:hover .kliant21,
+.kliant40:hover .kliant22,
+.kliant40:hover .kliant23,
+.kliant40:hover .kliant24,
+.kliant40:hover .kliant31,
+.kliant40:hover .kliant32,
+.kliant40:hover .kliant41,
+.kliant40:hover .kliant42,
+.kliant40:hover .kliant43,
+.kliant40:hover .kliant44 {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kliant00:hover.kliant00 .kliant02,
+.kliant10:hover.kliant00 .kliant02,
+.kliant20:hover.kliant00 .kliant02,
+.kliant30:hover.kliant00 .kliant02,
+.kliant40:hover.kliant00 .kliant02 {
+  fill: #2196f3;
+}
+.kliant00:hover.kliant00 .kliant01,
+.kliant10:hover.kliant00 .kliant01,
+.kliant20:hover.kliant00 .kliant01,
+.kliant30:hover.kliant00 .kliant01,
+.kliant40:hover.kliant00 .kliant01 {
   stroke: #2196f3;
 }
-
-.kliant20:hover .kliant22 {
+.kliant00:hover.kliant10 .kliant11,
+.kliant00:hover.kliant10 .kliant12,
+.kliant10:hover.kliant10 .kliant11,
+.kliant10:hover.kliant10 .kliant12,
+.kliant20:hover.kliant10 .kliant11,
+.kliant20:hover.kliant10 .kliant12,
+.kliant30:hover.kliant10 .kliant11,
+.kliant30:hover.kliant10 .kliant12,
+.kliant40:hover.kliant10 .kliant11,
+.kliant40:hover.kliant10 .kliant12 {
   fill: #2196f3;
 }
-
-.kliant20:hover .kliant23 {
+.kliant00:hover.kliant10 .kliant13,
+.kliant10:hover.kliant10 .kliant13,
+.kliant20:hover.kliant10 .kliant13,
+.kliant30:hover.kliant10 .kliant13,
+.kliant40:hover.kliant10 .kliant13 {
+  stroke: #2196f3;
+}
+.kliant00:hover.kliant20 .kliant21,
+.kliant10:hover.kliant20 .kliant21,
+.kliant20:hover.kliant20 .kliant21,
+.kliant30:hover.kliant20 .kliant21,
+.kliant40:hover.kliant20 .kliant21 {
+  stroke: #2196f3;
+}
+.kliant00:hover.kliant20 .kliant22,
+.kliant00:hover.kliant20 .kliant23,
+.kliant00:hover.kliant20 .kliant24,
+.kliant10:hover.kliant20 .kliant22,
+.kliant10:hover.kliant20 .kliant23,
+.kliant10:hover.kliant20 .kliant24,
+.kliant20:hover.kliant20 .kliant22,
+.kliant20:hover.kliant20 .kliant23,
+.kliant20:hover.kliant20 .kliant24,
+.kliant30:hover.kliant20 .kliant22,
+.kliant30:hover.kliant20 .kliant23,
+.kliant30:hover.kliant20 .kliant24,
+.kliant40:hover.kliant20 .kliant22,
+.kliant40:hover.kliant20 .kliant23,
+.kliant40:hover.kliant20 .kliant24 {
   fill: #2196f3;
 }
-
-.kliant20:hover .kliant24 {
+.kliant00:hover.kliant30 .kliant31,
+.kliant10:hover.kliant30 .kliant31,
+.kliant20:hover.kliant30 .kliant31,
+.kliant30:hover.kliant30 .kliant31,
+.kliant40:hover.kliant30 .kliant31 {
+  stroke: #2196f3;
+}
+.kliant00:hover.kliant30 .kliant32,
+.kliant10:hover.kliant30 .kliant32,
+.kliant20:hover.kliant30 .kliant32,
+.kliant30:hover.kliant30 .kliant32,
+.kliant40:hover.kliant30 .kliant32 {
+  fill: #2196f3;
+}
+.kliant00:hover.kliant40 .kliant41,
+.kliant10:hover.kliant40 .kliant41,
+.kliant20:hover.kliant40 .kliant41,
+.kliant30:hover.kliant40 .kliant41,
+.kliant40:hover.kliant40 .kliant41 {
+  stroke: #2196f3;
+}
+.kliant00:hover.kliant40 .kliant42,
+.kliant00:hover.kliant40 .kliant43,
+.kliant00:hover.kliant40 .kliant44,
+.kliant10:hover.kliant40 .kliant42,
+.kliant10:hover.kliant40 .kliant43,
+.kliant10:hover.kliant40 .kliant44,
+.kliant20:hover.kliant40 .kliant42,
+.kliant20:hover.kliant40 .kliant43,
+.kliant20:hover.kliant40 .kliant44,
+.kliant30:hover.kliant40 .kliant42,
+.kliant30:hover.kliant40 .kliant43,
+.kliant30:hover.kliant40 .kliant44,
+.kliant40:hover.kliant40 .kliant42,
+.kliant40:hover.kliant40 .kliant43,
+.kliant40:hover.kliant40 .kliant44 {
   fill: #2196f3;
 }
 
@@ -724,30 +809,6 @@ figure {
 
 .kliant32 {
   fill: #AFB1B8;
-}
-
-.kliant30:hover .kliant31 {
-  stroke: #2196f3;
-}
-
-.kliant30:hover .kliant32 {
-  fill: #2196f3;
-}
-
-.kliant40:hover .kliant41 {
-  stroke: #2196f3;
-}
-
-.kliant40:hover .kliant42 {
-  fill: #2196f3;
-}
-
-.kliant40:hover .kliant43 {
-  fill: #2196f3;
-}
-
-.kliant40:hover .kliant44 {
-  fill: #2196f3;
 }
 
 /* */

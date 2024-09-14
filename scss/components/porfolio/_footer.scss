@@ -1,164 +1,115 @@
  /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*# Open FFoootteerr                                                                                   Open   Footer                                                                                                Open FFoootteerr */
  /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-footer {
+ footer {
     padding: 60px 0;
-}
-
-.tel-footer {
-    color: rgba(240, 248, 255, 0.693);
-}
-
-.mail-footer {
-    color: rgba(240, 248, 255, 0.693);
-}
-
-.v {
-    color: #FFFFFF;
-    margin: 0;
-    margin-top: 20px;
-}
-
-.v,
-.mail-footer,
-.tel-footer {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.v:hover,
-.mail-footer:hover,
-.tel-footer:hover {
-    color: #2196F3;
-}
-
-.insta0 .insta1,
-.insta0 .insta2,
-.insta0 .insta3,
-.insta0 .insta4,
-.twitter0 .twitter1,
-.twitter0 .twitter2,
-.face0 .face1,
-.face0 .face2,
-.in0 .in1,
-.in0 .in2,
-.in0 .in3 {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.insta0:hover .insta1 {
-    fill: #2196f3;
-}
-
-.insta0:hover .insta2 {
-    fill: #ffffff;
-}
-
-.insta0:hover .insta3 {
-    fill: #ffffff;
-}
-
-.insta0:hover .insta4 {
-    fill: #ffffff;
-}
-
-.twitter0:hover .twitter1 {
-    fill: #2196f3;
-}
-
-.twitter0:hover .twitter2 {
-    fill: #ffffff;
-}
-
-.face0:hover .face1 {
-    fill: #2196f3;
-}
-
-.face0:hover .face2 {
-    fill: #ffffff;
-}
-
-.in0:hover .in1 {
-    fill: #2196f3;
-}
-
-.in0:hover .in2 {
-    fill: #ffffff;
-}
-
-.in0:hover .in3 {
-    fill: #ffffff;
-}
-
-.footer-flex-box-1 {
-    display: flex;
-}
-
-.fotero-1 {
-    padding-right: 70px;
-}
-
-.join-footer {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 16.41px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    margin-top: 0px;
-    color: #ffffff;
-}
-
-.subscraib {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 16.41px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    margin-top: 0px;
-    color: white;
-}
-
-.navisdscdsa {
-    padding-left: 93px;
-}
-
-.ddnavil {
-    display: flex;
-}
-
-.subscription-input {
-    padding-left: 12px;
-    font-size: 16px;
-    border: 1px solid #6c6d74;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #2f303a;
-    width: 358px;
-    height: 50px;
-    margin-top: 20px;
-}
-
-.subscription-button {
-    margin-top: 20px;
-    width: 200px;
-    height: 52px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: $button-color;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.subscription-button svg {
-    margin-left: 10px;
-}
-
-.but-fn {
-    padding-left: 12px;
-}
+  
+    .tel-footer,
+    .mail-footer {
+      color: rgba(240, 248, 255, 0.693);
+    }
+  
+    .v {
+      color: #FFFFFF;
+      margin: 0;
+      margin-top: 20px;
+    }
+  
+    .v,
+    .mail-footer,
+    .tel-footer {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover {
+        color: #2196F3;
+      }
+    }
+  
+    .insta0,
+    .twitter0,
+    .face0,
+    .in0 {
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover {
+        & .insta1, & .twitter1, & .face1, & .in1 {
+          fill: #2196f3;
+        }
+        & .insta2, & .twitter2, & .face2, & .in2 {
+          fill: #ffffff;
+        }
+        & .insta3, & .in3 {
+          fill: #ffffff;
+        }
+        & .insta4 {
+          fill: #ffffff;
+        }
+      }
+    }
+  
+    .footer-flex-box-1 {
+      display: flex;
+    }
+  
+    .fotero-1 {
+      padding-right: 70px;
+    }
+  
+    .join-footer,
+    .subscraib {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 16.41px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      margin-top: 0px;
+      color: #ffffff;
+    }
+  
+    .navisdscdsa {
+      padding-left: 93px;
+    }
+  
+    .ddnavil {
+      display: flex;
+    }
+  
+    .subscription-input {
+      padding-left: 12px;
+      font-size: 16px;
+      border: 1px solid #6c6d74;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #2f303a;
+      width: 358px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  
+    .subscription-button {
+      margin-top: 20px;
+      width: 200px;
+      height: 52px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: $button-color;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      svg {
+        margin-left: 10px;
+      }
+    }
+  
+    .but-fn {
+      padding-left: 12px;
+    }
+  }
+  
  /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*# Close FFoootteerr                                                                                  Close   Footer                                                                                              Close FFoootteerr */
  /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
