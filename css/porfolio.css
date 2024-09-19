@@ -1,202 +1,109 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500");
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
-/*# Open Hheeaaddeerr                                                                                  Open   Header                                                                                                Open Hheeaaddeerr */
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.heder-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.heder-img {
-  padding-right: 63px;
-}
-
-.header-top {
-  padding: 15px 0;
-}
-
-.item-head {
-  padding-right: 50px;
-}
-
-#header {
-  padding-left: 304px;
-}
-
-.item-header {
-  padding-right: 50px;
-}
-
-.heder-img {
-  padding-right: 63px;
-}
-
-article {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-article:hover {
-  box-shadow: 3px 1px 10px grey;
-}
-
-.top-itm {
+.header__link {
   color: #000000;
   font-weight: 500;
-}
-
-.header-top {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.maiss {
-  color: rgba(117, 117, 117, 0.8117647059);
-  font-weight: 500;
-}
-
-.tell {
-  color: #757575;
-  font-weight: 500;
-}
-
-.top-itm,
-.maiss,
-.tell {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-itm:hover,
-.maiss:hover,
-.tell:hover {
+footer .mail-footer, footer .tel-footer {
+  color: rgba(240, 248, 255, 0.693);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/*# Open Hheeaaddeerr                                                                                  Open   Header                                                                                                Open Hheeaaddeerr */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.header__menu a {
+  position: relative;
+}
+.header__menu a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -31px;
+  background: #36a0f2;
+  border-radius: 3px;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale3d(0, 1, 1);
+}
+.header__menu a:hover::before {
+  transform: scale3d(1, 1, 1);
+}
+.header__menu a.active1 {
+  color: #2196f3;
+}
+.header__menu a.active1::before {
+  transform: scale3d(1, 1, 1);
+}
+.header__logo {
+  padding-right: 63px;
+}
+.header__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__item--mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__item--mail-2 {
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__item--mail-2:hover {
+  fill: #2196f3;
+}
+.header__item--tel {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__item--tel:hover {
+  color: #2196f3;
+}
+.header__item:not(:nth-child(3)):not(:nth-child(5)) {
+  padding-right: 50px;
+}
+.header__link:hover {
   color: #2196F3;
-  font-weight: 500;
+}
+.header__link--mail {
+  color: rgba(117, 117, 117, 0.8117647059);
+}
+.header__link--tell {
+  color: #757575;
+  margin-left: 2px;
+}
+.header__link--mail2 {
+  fill: #757575;
 }
 
 #header {
   padding-left: 295px;
 }
 
-.item-header .fone-1header2,
-.item-header .email-1header1,
-.email-item-hedera .email-1header1 {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-header:hover .fone-1header2 {
-  fill: #2196f3;
-}
-
-.item-header:hover .email-1header1 {
-  fill: #2196f3;
-}
-
-.email-item-hedera:hover .email-1header1 {
-  fill: #2196f3;
-}
-
-.fone-1header2 {
-  fill: #757575;
-}
-
-.maiss {
-  fill: #757575;
-  text-decoration: none;
-}
-
-.item-header .fone-1header2 {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-header:hover .fone-1header2 {
-  fill: #2196f3;
-}
-
-.item-header .maiss {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-header:hover .maiss {
-  color: #2196f3;
-}
-
-.email-1header1,
-.email-1header2 {
-  fill: #757575;
-}
-
-.tell {
-  fill: #757575;
-  text-decoration: none;
-}
-
-.email-item-hedera .email-1header1,
-.email-item-hedera .email-1header2 {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-item-hedera:hover .email-1header1,
-.email-item-hedera:hover .email-1header2 {
-  fill: #2196f3;
-}
-
-.email-item-hedera .tell {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-item-hedera:hover .tell {
-  color: #2196f3;
-}
-
-.menu a {
-  position: relative;
-}
-
-.menu a::before {
-  content: "";
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  bottom: -31px;
-  border-radius: 3px;
-  background: #36a0f2;
-  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale3d(0, 1, 1);
-}
-
-.menu a:hover::before {
-  transform: scale3d(1, 1, 1);
-}
-
-.item-header {
-  display: flex;
-  align-items: center;
-}
-
-.email-item-hedera {
-  display: flex;
-  align-items: center;
-}
-
-.tell {
-  margin-left: 2px;
-}
-
 .fone-1header1 {
-  margin-right: 2px;
-}
-
-.menu a.active1 {
-  color: #2196f3;
-}
-
-.menu a.active1::before {
-  transform: scale3d(1, 1, 1);
+  margin-right: 12px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -244,14 +151,15 @@ main {
 
 .first0list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 .button-top,
 .button-dfdfdfd {
   border: none;
-  background: #f5f4f8;
+  background: #f5f4fa;
   color: black;
   font-size: 17px;
   border-radius: 1px;
@@ -262,7 +170,7 @@ main {
 .button-top:hover,
 .button-dfdfdfd:hover {
   background-color: #2196f3;
-  color: #eee;
+  color: #ffffff;
   font-weight: 500;
   box-shadow: 1px 2px 5px gray;
 }
@@ -343,79 +251,23 @@ figure {
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 footer {
   padding: 60px 0;
-}
-footer .tel-footer,
-footer .mail-footer {
-  color: rgba(240, 248, 255, 0.693);
+  background-color: #2f303a;
+  color: #ffffff;
 }
 footer .v {
   color: #FFFFFF;
   margin: 0;
   margin-top: 20px;
 }
-footer .v,
-footer .mail-footer,
-footer .tel-footer {
+footer .v:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-footer .v:hover,
-footer .mail-footer:hover,
-footer .tel-footer:hover {
   color: #2196F3;
-}
-footer .insta0,
-footer .twitter0,
-footer .face0,
-footer .in0 {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-footer .insta0:hover .insta1, footer .insta0:hover .twitter1, footer .insta0:hover .face1, footer .insta0:hover .in1,
-footer .twitter0:hover .insta1,
-footer .twitter0:hover .twitter1,
-footer .twitter0:hover .face1,
-footer .twitter0:hover .in1,
-footer .face0:hover .insta1,
-footer .face0:hover .twitter1,
-footer .face0:hover .face1,
-footer .face0:hover .in1,
-footer .in0:hover .insta1,
-footer .in0:hover .twitter1,
-footer .in0:hover .face1,
-footer .in0:hover .in1 {
-  fill: #2196f3;
-}
-footer .insta0:hover .insta2, footer .insta0:hover .twitter2, footer .insta0:hover .face2, footer .insta0:hover .in2,
-footer .twitter0:hover .insta2,
-footer .twitter0:hover .twitter2,
-footer .twitter0:hover .face2,
-footer .twitter0:hover .in2,
-footer .face0:hover .insta2,
-footer .face0:hover .twitter2,
-footer .face0:hover .face2,
-footer .face0:hover .in2,
-footer .in0:hover .insta2,
-footer .in0:hover .twitter2,
-footer .in0:hover .face2,
-footer .in0:hover .in2 {
-  fill: #ffffff;
-}
-footer .insta0:hover .insta3, footer .insta0:hover .in3,
-footer .twitter0:hover .insta3,
-footer .twitter0:hover .in3,
-footer .face0:hover .insta3,
-footer .face0:hover .in3,
-footer .in0:hover .insta3,
-footer .in0:hover .in3 {
-  fill: #ffffff;
-}
-footer .insta0:hover .insta4,
-footer .twitter0:hover .insta4,
-footer .face0:hover .insta4,
-footer .in0:hover .insta4 {
-  fill: #ffffff;
 }
 footer .footer-flex-box-1 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 footer .fotero-1 {
   padding-right: 70px;
@@ -435,6 +287,9 @@ footer .navisdscdsa {
 }
 footer .ddnavil {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 footer .subscription-input {
   padding-left: 12px;
@@ -448,6 +303,11 @@ footer .subscription-input {
   margin-top: 20px;
 }
 footer .subscription-button {
+  background-color: #1e90ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   width: 200px;
   height: 52px;
@@ -455,17 +315,18 @@ footer .subscription-button {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  background-color: #2196f3;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 footer .subscription-button svg {
   margin-left: 10px;
 }
 footer .but-fn {
   padding-left: 12px;
+}
+footer .fotero-2 {
+  height: 110px;
+}
+footer .fotero-1 {
+  padding-top: 20px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

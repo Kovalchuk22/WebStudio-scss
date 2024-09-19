@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500");
 @import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholders';
 @import 'components/studio/header' ;
 @import 'components/studio/section-1-modal' ;
 @import 'components/studio/sectuon-2' ;

@@ -39,28 +39,26 @@
   }
   
   .first0list {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include flex-center(row, center, center);
   }
   
   .button-top,
   .button-dfdfdfd {
     border: none;
-    background: #f5f4f8;
+    background: $background-color;
     color: black;
     font-size: 17px;
     border-radius: 1px;
     font-weight: 500;
     margin-bottom: 20px;
-  
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     &:hover {
       background-color: $button-color;
-      color: #eee;
+      color: $text-color;
       font-weight: 500;
       box-shadow: 1px 2px 5px gray;
     }

@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:500");
+.header__link {
+  color: #000000;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .mail-footer, footer .tel-footer {
+  color: rgba(240, 248, 255, 0.693);
+}
+
+.item-last {
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.teamss-text, .imgssa, .texsstt, .item .description {
+  text-align: center;
+}
+
+.item .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.768);
+  color: white;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
 /*# Open Hheeaaddeerr                                                                                  Open   Header                                                                                                Open Hheeaaddeerr */
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -8,14 +43,16 @@
 }
 .header__nav {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
 }
 .header__menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   list-style: none;
 }
 .header__menu a {
@@ -24,7 +61,7 @@
 .header__menu a::before {
   content: "";
   width: 100%;
-  height: 5px;
+  height: 4px;
   position: absolute;
   bottom: -31px;
   background: #36a0f2;
@@ -46,10 +83,14 @@
 }
 .header__item {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .header__item--mail {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .header__item--mail-2 {
@@ -68,11 +109,6 @@
 .header__item:not(:nth-child(3)):not(:nth-child(5)) {
   padding-right: 50px;
 }
-.header__link {
-  color: #000000;
-  font-weight: 500;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .header__link:hover {
   color: #2196F3;
 }
@@ -89,6 +125,10 @@
 
 #header {
   padding-left: 295px;
+}
+
+.fone-1header1 {
+  margin-right: 12px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -459,16 +499,11 @@ button {
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*# Open Section-3                                                                                   Open   Section-3                                                                                                 Open Section-3 */
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.texsstt {
-  text-align: center;
-}
-
 .imgssa {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
-  padding: 0;
   margin-bottom: 94px;
 }
 
@@ -476,18 +511,6 @@ button {
   position: relative;
   height: 294px;
 }
-.item .description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.768627451);
-  color: white;
-  font-size: 20px;
-  padding: 10px 0;
-  text-align: center;
-}
-
 .teamss-text {
   font-size: 35px;
   padding-bottom: 20px;
@@ -507,10 +530,6 @@ button {
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*# Open Section-4                                                                                   Open   Section-4                                                                                                 Open Section-4 */
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.teamss-text {
-  text-align: center;
-}
-
 .team {
   padding: 94px 0;
 }
@@ -523,23 +542,12 @@ button {
 }
 
 .item-last {
-  background-color: white;
+  text-align: center;
 }
 
 figure {
   margin: 0;
   padding: 0;
-}
-
-.team {
-  background-color: #f5f4fa;
-}
-
-.item-last {
-  text-align: center;
-  background-color: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 4px 4px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -820,48 +828,29 @@ figure {
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 footer {
   padding: 60px 0;
-}
-
-.tel-footer {
-  color: rgba(240, 248, 255, 0.693);
-}
-
-.mail-footer {
-  color: rgba(240, 248, 255, 0.693);
-}
-
-footer {
   background-color: #2f303a;
   color: #ffffff;
 }
-
-.v {
+footer .v {
   color: #FFFFFF;
   margin: 0;
   margin-top: 20px;
 }
-
-.v:hover,
-.mail-footer:hover,
-.tel-footer:hover {
+footer .v:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.v:hover,
-.mail-footer:hover,
-.tel-footer:hover {
   color: #2196F3;
 }
-
-.footer-flex-box-1 {
+footer .footer-flex-box-1 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-.fotero-1 {
+footer .fotero-1 {
   padding-right: 70px;
 }
-
-.join-footer {
+footer .join-footer,
+footer .subscraib {
   font-size: 18px;
   font-weight: 400;
   line-height: 16.41px;
@@ -869,25 +858,16 @@ footer {
   text-align: left;
   margin-top: 0px;
 }
-
-.subscraib {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16.41px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  margin-top: 0px;
-}
-
-.navisdscdsa {
+footer .navisdscdsa {
   padding-left: 93px;
 }
-
-.ddnavil {
+footer .ddnavil {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-.subscription-input {
+footer .subscription-input {
   padding-left: 12px;
   font-size: 16px;
   border: 1px solid #6c6d74;
@@ -898,8 +878,12 @@ footer {
   height: 50px;
   margin-top: 20px;
 }
-
-.subscription-button {
+footer .subscription-button {
+  background-color: #1e90ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   width: 200px;
   height: 52px;
@@ -907,19 +891,18 @@ footer {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  background-color: #1e90ff;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.subscription-button svg {
+footer .subscription-button svg {
   margin-left: 10px;
 }
-
-.but-fn {
+footer .but-fn {
   padding-left: 12px;
+}
+footer .fotero-2 {
+  height: 110px;
+}
+footer .fotero-1 {
+  padding-top: 20px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

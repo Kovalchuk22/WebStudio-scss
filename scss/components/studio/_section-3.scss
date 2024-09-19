@@ -2,15 +2,12 @@
 /*# Open Section-3                                                                                   Open   Section-3                                                                                                 Open Section-3 */
  /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
  .texsstt {
-  text-align: center;
+  @extend %center-text;
 }
 
 .imgssa {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  padding: 0;
+  @include flex-center(row, space-between);
+  @extend %center-text;
   margin-bottom: 94px;
 }
 
@@ -19,15 +16,7 @@
   height: 294px;
 
   .description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(47, 48, 58, 0.768627451);
-    color: white;
-    font-size: 20px;
-    padding: 10px 0;
-    text-align: center;
+    @extend %description-style;
   }
 }
 
