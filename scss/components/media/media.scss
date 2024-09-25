@@ -1,0 +1,139 @@
+/* Стилі для малих екранів (телефони від 0px до 480px) */
+@media (max-width: 479px) {
+    .container {
+        max-width: 480px !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .itemsmains {
+        flex-direction: column;
+
+    }
+
+    .item-main {
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .imgfug2over {
+        width: 100%;
+        height: 294px;
+    }
+
+    .figcaption {
+        text-align: start;
+    }
+
+    .first0list {
+        display: flex !important;
+        flex-wrap: wrap !important; 
+        column-gap: 10px;
+        justify-content: flex-start !important; 
+        max-width: 440px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 25px;
+    }
+    main {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .footer-flex-box-1 {
+        flex-direction: column !important;
+        width: 470px;
+    }
+    .footer .fotero-1 {
+        padding-right: 0px !important;
+    }
+    .fotero-1 {
+        text-align: center;
+        padding: 0 !important;
+        padding-bottom: 60px !important;
+    }
+    .fotero-2 {
+        text-align: center !important;
+        padding-bottom: 30px;
+    }
+    .join-footer {
+        padding-left: 30px;
+    }
+    .navisdscdsa {
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .ddnavil {
+        display: flex;
+        flex-wrap: wrap;
+        width: 380px;
+        padding: 0;
+        margin: 0;
+    }
+    .subscription-input {
+        padding: 0;
+        margin: 0;
+    }
+    .subscraib {
+        padding-left: 70px;
+    }
+    #a43 {
+        padding: 0px !important;
+    }
+}
+
+/* Стилі для середніх екранів (планшети від 480px до 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .item-main {
+        max-width: 350px;
+    }
+    .first0list {
+        width: 100%;
+        text-align: center;
+    }
+    main {
+        padding: 0;
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .footer-flex-box-1 {
+        max-width: 768px;
+        flex-wrap: wrap;
+    }
+    .fotero-1 {
+        padding: 0;
+        text-align: center;
+    }
+    .join-footer {
+        padding-left: 30px;
+    }
+    .navisdscdsa {
+        padding-top: 60px;
+        padding-left: 0px !important;
+    }
+    .ddnavil {
+        display: flex;
+        flex-wrap: wrap;
+        width: 380px;
+        padding: 0;
+        margin: 0;
+    }
+    .subscription-input {
+        padding: 0;
+        margin: 0;
+    }
+    .subscraib {
+        padding-left: 70px;
+    }
+    #a43 {
+        padding: 0px !important;
+    }
+}
+
+/* Стилі для екранів від 768px до 1200px (планшети та ПК) */
+@media (min-width: 768px) and (max-width: 1200px) {}
+
+/* Стилі для екранів більше 1200px (великі монітори) */
+@media (min-width: 1200px) {}

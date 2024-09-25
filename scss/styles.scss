@@ -12,7 +12,10 @@
 @import 'components/studio/footer' ; 
 
 /*# sourceMappingURL=styles.css.map */
-
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 .container {
   width: 1200px;
   margin: auto;
@@ -134,3 +137,4 @@ figcaption {
 .in0:hover .in3 {
   fill: #ffffff;
 }
+

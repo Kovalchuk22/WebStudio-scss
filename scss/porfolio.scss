@@ -2,6 +2,7 @@
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/placeholders';
+@import 'components/media/media' ;
 @import 'components/porfolio/header' ;
 @import 'components/porfolio/section-1' ;
 @import 'components/porfolio/section-2' ;
@@ -9,7 +10,10 @@
 
 /*# sourceMappingURL=porfolio.css.map */
 
-
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 button {
   background: $button-color;
