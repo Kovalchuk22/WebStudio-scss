@@ -195,10 +195,3 @@
     justify-content: center !important;
   }
 }
-/* Extra small: 0px (320px) - 575px */
-@media (max-width: 575px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-}

@@ -3,6 +3,7 @@
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/placeholders';
+@import 'components/media/laters' ;
 @import 'components/studio/header' ;
 @import 'components/studio/section-1-modal' ;
 @import 'components/studio/sectuon-2' ;
@@ -14,8 +15,8 @@
 /*# sourceMappingURL=styles.css.map */
 html, body {
   width: 100%;
-  overflow-x: hidden;
 }
+
 .container {
   width: 1200px;
   margin: auto;

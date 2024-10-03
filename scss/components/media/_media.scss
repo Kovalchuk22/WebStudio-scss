@@ -1,5 +1,4 @@
 /* Medium: 1199px */
-/* Small: 576px - 767px */
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
@@ -134,6 +133,7 @@
     .itemsmains {
         flex-direction: column;
         width: 460px;
+        margin: 0 auto !important;
     }
 
     .item-main {
@@ -210,6 +210,9 @@
         display: flex !important;
         justify-content: center !important;
     }
+    .imgsss {
+        overflow: hidden;
+    }
 }
 
 /* Extra small: 0px (320px) - 575px */
@@ -219,3 +222,4 @@
         padding: 0 15px;
     }
 }
+

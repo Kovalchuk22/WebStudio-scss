@@ -10,7 +10,6 @@ footer .mail-footer, footer .tel-footer {
 }
 
 /* Medium: 1199px */
-/* Small: 576px - 767px */
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -132,6 +131,7 @@ footer .mail-footer, footer .tel-footer {
   .itemsmains {
     flex-direction: column;
     width: 460px;
+    margin: 0 auto !important;
   }
   .item-main {
     max-width: 450px;
@@ -204,6 +204,9 @@ footer .mail-footer, footer .tel-footer {
     padding: 0px !important;
     display: flex !important;
     justify-content: center !important;
+  }
+  .imgsss {
+    overflow: hidden;
   }
 }
 /* Extra small: 0px (320px) - 575px */
