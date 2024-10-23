@@ -70,8 +70,14 @@ button {
 }
 
 .one {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/foto12.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/new-foto/2-section-backround\(1x\).png');
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../img/new-foto/2-section-backround\(2x\).png');
+    }
 }
 
 
